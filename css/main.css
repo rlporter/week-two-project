@@ -1,0 +1,57 @@
+body {
+  color: #0B1942;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#fc_logo {
+  background-color: #F5005B;
+}
+
+.nav_container {
+  background-color: #7DDFE8;
+}
+.nav_links a {
+  color: #FFFFFF;
+}
+
+#home_link {
+  background-color: #00A5BF;
+}
+#cal_link {
+  background-color: #00B7D3;
+}
+#join_link {
+  background-color: #00D5E7;
+}
+
+h2 {
+  background-color: #0B1942;
+  color: #FFFFFF;
+}
+
+.main_layout a {
+  color: #00B7D3;
+  background-color: #0B1942;
+}
+
+.next_film {
+  background-color: #0B1942;
+}
+.next_film_poster {
+  background-color: #E2E2E2;
+}
+.upcoming_films {
+  background-color: #E2E2E2;
+}
+
+.days {
+  background-color: #0B1942;
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #7DDFE8;
+}
+#copyright {
+    color: #FFFFFF
+}

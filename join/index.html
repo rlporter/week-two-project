@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset="utf-8" />
+  <title>Film Club - Join</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="nav_container">
+      <div id="fc_logo">
+        <img src="../images/filmclub.png" alt="Film Club Logo" />
+      </div>
+      <div class="nav_links">
+        <div id="home_link">
+          <a href="../index.html">Home</a>
+        </div>
+        <div id="cal_link">
+          <a href="../calendar/index.html">Calendar</a>
+        </div>
+        <div id="join_link">
+          <a href="./index.html">Join</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <h1>Join Film Club</h1>
+
+    <form action="/action_page.php" method="post">
+      <fieldset>
+
+        <div class=profile>
+          <label for="profile_picture">profile picture</label>
+          <input type="file" name="file" />
+          <img src="../images/profile-placeholder.png" alt="profile picture" />
+
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">email address</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="password">password</label>
+          <input type="password" id="password" name="password" />
+
+          <label for="confirm">confirm password</label>
+          <input type="password" id="confirm" name="confirm_password" />
+        </div>
+
+        <div class="film_interests">
+          <label for="genre">Which genres are you interested in?</label>
+          <input type="checkbox" name="genre" value="action" />action
+          <input type="checkbox" name="genre" value="adventure" />adventure
+          <input type="checkbox" name="genre" value="comedy" />comedy
+          <input type="checkbox" name="genre" value="drama" />drama
+          <input type="checkbox" name="genre" value="fantasy" />fantasy
+          <input type="checkbox" name="genre" value="historical" />historical
+          <input type="checkbox" name="genre" value="horror" />horror
+          <input type="checkbox" name="genre" value="mystery" />mystery
+          <input type="checkbox" name="genre" value="romance" />romance
+          <input type="checkbox" name="genre" value="science fiction" />science fiction
+          <input type="checkbox" name="genre" value="western" />western
+        </div>
+        <div class="additional_info">
+          <label for="additional_info" name="addlInfo">Additional input</label>
+          <textarea name="additional_info" form="join_form"></textarea>
+        </div>
+
+        <div id="join_button">
+          <input type="submit" value="Join Film Club">
+        </div>
+      </fieldset>
+    </form>
+
+    <footer>
+      <div class="footer_links">
+        <div id="home_link">
+          <a href="./index.html">Home</a>
+        </div>
+        <div id="cal_link">
+          <a href="../calendar/index.html">Calendar</a>
+        </div>
+        <div id="join_link">
+          <a href="../join/index.html">Join</a>
+        </div>
+        <div id="copyright">
+          <p>&copy 2017, Film Club</p>
+        </div>
+
+      </div>
+
+    </footer>
+
+
+</body>
+</html>
