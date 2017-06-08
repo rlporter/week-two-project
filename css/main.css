@@ -3,45 +3,149 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+.nav_container {
+  background-color: #7DDFE8;
+  display: flex;
+
+}
+
 #fc_logo {
   background-color: #F5005B;
 }
 
-.nav_container {
-  background-color: #7DDFE8;
+.nav_links {
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: 30%;
 }
 .nav_links a {
   color: #FFFFFF;
+  padding-top: 60px;
+  padding-left: 20px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  flex: 1;
 }
 
-#home_link {
+.home_link {
   background-color: #00A5BF;
+  flex: 1;
 }
-#cal_link {
+.cal_link {
   background-color: #00B7D3;
+  flex: 1;
+
 }
-#join_link {
+.join_link {
   background-color: #00D5E7;
+  flex: 1;
+
+}
+
+h1 {
+  font-weight: normal;
 }
 
 h2 {
   background-color: #0B1942;
   color: #FFFFFF;
+  padding: 5px;
+  font-weight: normal;
+}
+
+.main_layout {
+  background-color: #0B1942;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main_layout a {
   color: #00B7D3;
-  background-color: #0B1942;
+
+}
+
+.info_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.call_out {
+  flex-basis: 30%;
+  box-sizing: border-box;
 }
 
 .next_film {
-  background-color: #0B1942;
-}
-.next_film_poster {
   background-color: #E2E2E2;
+  flex-basis: 45%;
+  display: flex;
 }
+
+.next_film_column1 {
+  flex: 1;
+}
+
+.next_film_column2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.next_date {
+  flex: 1;
+}
+
+.next_date a {
+  font-size: 24px;
+}
+.next_topics {
+  flex: 1;
+}
+
 .upcoming_films {
   background-color: #E2E2E2;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h4 {
+  font-weight: bolder;
+}
+
+.month {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.days {
+  display: flex;
+  flex: 1;
+}
+
+.days li {
+  width: 100px;
+  height: 100px;
+}
+
+.highlighted {
+  background-color: #F5005B;
+}
+
+.week {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.week li {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: circle;
 }
 
 .days {
@@ -49,9 +153,101 @@ h2 {
   color: #FFFFFF;
 }
 
+form {
+  max-width: 80vw;
+
+}
+
+fieldset {
+  border: none;
+}
+
+.round-pic {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
+}
+
+.profile {
+  display: flex;
+
+
+}
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.personal_info {
+  flex: 1;
+
+}
+
+.password {
+  flex: 1;
+}
+
+.film_interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.additional_info {
+  display: flex;
+  flex: 1;
+}
+
+textarea {
+  flex: 1
+}
+
+input[type=submit] {
+    padding: 10px 15px;
+    margin: auto;
+    background: #F5005B;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    border: 0 none;
+    cursor:pointer;
+    border-radius: 0;
+
 footer {
   background-color: #7DDFE8;
+  display: flex;
 }
-#copyright {
-    color: #FFFFFF
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_links a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#copyright p {
+  color: #FFFFFF;
+  margin: auto;
+  text-align: right;
+}
+
+/**Medium Breakpoint**/
+
+@media screen and (min-width: 545px) and (max-width: 768px) {
+
+}
+
+/**Large Breakpoint**/
+
+@media screen and (min-width: 769px) {
+
 }
