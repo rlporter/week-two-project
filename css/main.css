@@ -1,12 +1,21 @@
+
+/**Large Breakpoint**/
+
+@media screen and (min-width: 769px) {
+
+}
+
 body {
   color: #0B1942;
   font-family: 'PT Sans', sans-serif;
+  width: 99vw;
+  height: 50vh;
 }
 
 .nav_container {
   background-color: #7DDFE8;
   display: flex;
-
+  margin: auto;
 }
 
 #fc_logo {
@@ -15,14 +24,12 @@ body {
 
 .nav_links {
   display: flex;
-  box-sizing: border-box;
   flex-basis: 30%;
 }
 .nav_links a {
   color: #FFFFFF;
   padding-top: 60px;
   padding-left: 20px;
-  text-align: center;
   margin: auto;
   text-decoration: none;
   font-size: 24px;
@@ -33,16 +40,17 @@ body {
 .home_link {
   background-color: #00A5BF;
   flex: 1;
+  width: 15vw;
 }
 .cal_link {
   background-color: #00B7D3;
   flex: 1;
-
+  width: 15vw;
 }
 .join_link {
   background-color: #00D5E7;
   flex: 1;
-
+  width: 15vw;
 }
 
 h1 {
@@ -53,130 +61,147 @@ h2 {
   background-color: #0B1942;
   color: #FFFFFF;
   padding: 5px;
-  margin: 0;
+  margin-left: 10px;
+  font-size: 28px;
   font-weight: normal;
 }
 
 .big_container {
   background-color: #0B1942;
-}
-
-.main_layout {
-  background-color: #0B1942;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 20px;
+  height: 150vh;
+
 }
 
-.main_layout a {
+.main_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*height: 120vh;*/
+
+}
+
+
+.next_film {
+  flex-basis: 40%;
+  display: flex;
+  align-items: flex-start;
+  background-color: #E2E2E2;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 60vh;
+
+
+}
+
+.next_date a {
   color: #00B7D3;
+  font-size: 24px;
+}
+.next_film_column1 {
+  flex: 1;
+  padding: 30px;
+}
+.next_film_column2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.next_topics {
+  flex: 1;
+}
+/*ul > li {
+  font-size: 20px;
+}*/
+
+.upcoming_films {
+  flex-basis: 60%;
+  display: flex;
+  padding: 15px;
+  margin: 20px;
+  height: 130vh;
+  background-color: #E2E2E2;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
 
 }
 
 .info_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /*align-content: stretch;*/
 }
 
 .call_out {
   flex-basis: 30%;
-  box-sizing: border-box;
-}
-
-.next_film {
-  background-color: #E2E2E2;
-  display: flex;
-}
-
-.next_film_column1 {
-  flex: 2;
-}
-
-.next_film_column2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.next_date {
-  flex: 1;
-}
-
-.next_date a {
-  font-size: 24px;
-}
-.next_topics {
-  flex: 1;
-}
-
-.upcoming_films {
-  background-color: #E2E2E2;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 15px 20px 15px 20px;
+  align-content: space-around;
+  /*box-sizing: border-box;*/
 }
 
 .new_film {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 60vh;
+  width: 20vw;
 }
 
 .new_film a {
   color: #00B7D3;
-  font-size: 18px;
-}
-
-h4 {
+  font-size: 22px;
   font-weight: bolder;
 }
 
-.month {
-    box-sizing: border-box;
-    display: flex;
+h4 {
+  font-weight: bold;
 }
 
-.days {
-  display: flex;
-  flex: 1;
+.cal_container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0B1942;
+}
+table {
+  height: 90vh;
+  width: 90vw;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
 }
 
-.days li {
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.day {
+  background-color: #0B1942;
+}
+td {
+  border: 2px solid #FFFFFF;
   width: 100px;
   height: 100px;
+  vertical-align: top;
+  color: #FFFFFF;
 }
 
 .highlighted {
   background-color: #F5005B;
 }
 
-.week {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.week li {
-  list-style-type: none;
-}
-
 li {
   list-style-type: circle;
-}
-
-.days {
-  background-color: #0B1942;
-  color: #FFFFFF;
 }
 
 form {
   max-width: 80vw;
 
-}
-
-fieldset {
-  border: none;
 }
 
 .round-pic {
@@ -188,8 +213,6 @@ fieldset {
 
 .profile {
   display: flex;
-
-
 }
 
 .picture {
@@ -202,7 +225,6 @@ fieldset {
 
 .personal_info {
   flex: 1;
-
 }
 
 .password {
@@ -235,21 +257,32 @@ input[type=submit] {
     border: 0 none;
     cursor:pointer;
     border-radius: 0;
+}
 
 footer {
   background-color: #7DDFE8;
+  height: 20vh;
   display: flex;
 }
 
-.footer_links a {
-  color: #FFFFFF;
-  text-decoration: none;
-  display: flex;
+footer.home_link {
+  background-color: #00A5BF;
+  flex: 1;
+
+}
+footer.cal_link {
+  background-color: #00B7D3;
+  flex: 1;
+
+}
+footer.join_link {
+  background-color: #00D5E7;
+  flex: 1;
 }
 
-#copyright {
+div.copyright_info {
   color: #FFFFFF;
-
+  background-color: #7DDFE8;
 }
 
 /**Medium Breakpoint**/
@@ -263,8 +296,7 @@ footer {
 
 }
 
-/**Large Breakpoint**/
-
-@media screen and (min-width: 769px) {
+/**Small Breakpoints**/
+@media screen and (min-width: 320px) and (max-width: 544px){
 
 }
