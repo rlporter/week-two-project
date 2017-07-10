@@ -1,10 +1,4 @@
 
-/**Large Breakpoint**/
-
-@media screen and (min-width: 769px) {
-
-}
-
 body {
   color: #0B1942;
   font-family: 'PT Sans', sans-serif;
@@ -66,71 +60,69 @@ h2 {
   font-weight: normal;
 }
 
-.big_container {
-  background-color: #0B1942;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  height: 150vh;
+/**Large Breakpoint**/
 
-}
+@media screen and (min-width: 769px) {
 
-.main_content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /*height: 120vh;*/
+  .big_container {
+    background-color: #0B1942;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 170vh;
 
-}
+  }
 
+  .main_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-.next_film {
-  flex-basis: 40%;
-  display: flex;
-  align-items: flex-start;
-  background-color: #E2E2E2;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: 60vh;
+  }
+  .next_film {
+    flex-basis: 40%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #E2E2E2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60vh;
+  }
+  .next_date a {
+    color: #00B7D3;
+    font-size: 24px;
+  }
+  .next_film_column1 {
+    flex: 1;
+    padding: 30px;
+  }
+  .next_film_column2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
 
+  .next_topics {
+    flex: 1;
+  }
 
-}
+  .upcoming_films {
+    flex-basis: 60%;
+    display: flex;
+    padding: 15px;
+    margin: 20px;
+    height: 140vh;
+    background-color: #E2E2E2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
 
-.next_date a {
-  color: #00B7D3;
-  font-size: 24px;
-}
-.next_film_column1 {
-  flex: 1;
-  padding: 30px;
-}
-.next_film_column2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
+  }
 
-.next_topics {
-  flex: 1;
-}
-/*ul > li {
-  font-size: 20px;
-}*/
-
-.upcoming_films {
-  flex-basis: 60%;
-  display: flex;
-  padding: 15px;
-  margin: 20px;
-  height: 130vh;
-  background-color: #E2E2E2;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
 
 }
 
@@ -204,43 +196,96 @@ form {
 
 }
 
+fieldset {
+  width: 100vw;
+  margin: 10px;
+}
 .round-pic {
   border-radius: 50%;
   width: 300px;
   height: 300px;
+  padding: 30px;
 
 }
 
+.upper {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .profile {
   display: flex;
+  padding: 30px;
+
 }
 
 .picture {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   align-items: flex-start;
   padding: 20px;
 }
 
 .personal_info {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
 .password {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  width: 300px;
+  height: 20px;
+}
+#email {
+  width: 300px;
+  height: 20px;
+}
+#password {
+  width: 300px;
+  height: 20px;
+}
+#confirm {
+  width: 300px;
+  height: 20px;
 }
 
 .film_interests {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 500px;
+  margin: 10px;
+}
+
+.col_one {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.col_two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.col_three {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .additional_info {
   display: flex;
-  flex: 1;
+  flex-direction: column;
+  width: 60vw;
+  height: 15vh;
+  padding: 30px;
 }
 
 textarea {
@@ -248,7 +293,7 @@ textarea {
 }
 
 input[type=submit] {
-    padding: 10px 15px;
+    padding: 15px 20px;
     margin: auto;
     background: #F5005B;
     color: #FFFFFF;
@@ -268,8 +313,12 @@ footer {
 footer.home_link {
   background-color: #00A5BF;
   flex: 1;
-
 }
+
+a {
+  color: #FFFFFF;
+}
+
 footer.cal_link {
   background-color: #00B7D3;
   flex: 1;
@@ -280,23 +329,63 @@ footer.join_link {
   flex: 1;
 }
 
-div.copyright_info {
+.copyright_info {
   color: #FFFFFF;
   background-color: #7DDFE8;
 }
 
+
+
+
+
 /**Medium Breakpoint**/
 
 @media screen and (min-width: 545px) and (max-width: 768px) {
+
   .next_film_column2 {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
+  body {
+    background-color: yellow;
+  }
+
 }
 
 /**Small Breakpoints**/
 @media screen and (min-width: 320px) and (max-width: 544px){
+
+body {
+  background-color: orange;
+}
+
+.nav_links {
+  flex-direction: column;
+  align-items: stretch;
+  border: 2px solid black;
+
+}
+
+
+  /*.film_interests {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }*/
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  /*.upper {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .lower {
+    display: flex;
+    flex-direction: column;
+  }*/
 
 }

@@ -29,6 +29,7 @@
 
     <form action="/action_page.php" method="post">
       <fieldset>
+        <div class="upper">
 
         <div class="profile">
         <div class="picture">
@@ -38,38 +39,59 @@
         </div>
 
         <div class="personal_info">
+
           <label for="name">name</label>
           <input type="text" id="name" name="name" />
 
           <label for="email">email address</label>
           <input type="email" id="email" name="email" />
 
-        <div class="password">
+        </div>
+
+          <div class="password">
           <label for="password">password</label>
           <input type="password" id="password" name="password" />
 
           <label for="confirm">confirm password</label>
           <input type="password" id="confirm" name="confirm_password" />
         </div>
-
+        </div>
         </div>
 
-        </div>
+        <div class="lower">
 
         <label for="genre">Which genres are you interested in?</label>
 
         <div class="film_interests">
-          <input type="checkbox" name="genre" value="action" />action
-          <input type="checkbox" name="genre" value="adventure" />adventure
-          <input type="checkbox" name="genre" value="comedy" />comedy
-          <input type="checkbox" name="genre" value="drama" />drama
+          <div class="col_one">
+          <input type="checkbox" name="genre" value="action" />
+          <label>action</label>
+          <input type="checkbox" name="genre" value="drama" />
+          <label>drama</label>
+          <input type="checkbox" name="genre" value="horror" />
+          <label>horror</label>
+          <input type="checkbox" name="genre" value="science fiction" />
+          <label>science fiction</label>
+          </div>
+
+          <div class="col_two">
+          <input type="checkbox" name="genre" value="adventure" />
+          <label>adventure</label>
           <input type="checkbox" name="genre" value="fantasy" />fantasy
+          <input type="checkbox" name="genre" value="mystery" />
+          <label>mystery</label>
+          <input type="checkbox" name="genre" value="western" />
+          <label>western</label>
+          </div>
+
+          <div class="col_three">
+          <input type="checkbox" name="genre" value="comedy" />
+          <label>comedy</label>
           <input type="checkbox" name="genre" value="historical" />historical
-          <input type="checkbox" name="genre" value="horror" />horror
-          <input type="checkbox" name="genre" value="mystery" />mystery
-          <input type="checkbox" name="genre" value="romance" />romance
-          <input type="checkbox" name="genre" value="science fiction" />science fiction
-          <input type="checkbox" name="genre" value="western" />western
+          <input type="checkbox" name="genre" value="romance" />
+          <label>romance</label>
+          </div>
+
         </div>
         <div class="additional_info">
           <label for="additional_info" name="addlInfo">Additional input</label>
@@ -78,6 +100,7 @@
 
         <div id="join_button">
           <input type="submit" value="Join Film Club">
+        </div>
         </div>
       </fieldset>
     </form>
@@ -94,7 +117,7 @@
           <a href="./index.html">Join</a>
         </div>
         <div id="copyright">
-        <p>&copy 2017, Film Club</p>
+        <p class="copyright_info">&copy 2017, Film Club</p>
         </div>
       </div>
 
